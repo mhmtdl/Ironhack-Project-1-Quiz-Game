@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geographic Quiz Game</title>
+    <!-- FONTAWESOME -->
+    <script src="https://kit.fontawesome.com/29478703da.js" crossorigin="anonymous"></script>
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    
+</head>
+<body>
+  
+    
+    <section id="myHeroSection" class="hero">
+        <!-- START -->
+           <div class="container">
+            <img src="images/kidsgeograph-1.jpg" class="rounded mx-auto d-block" alt="...">
+              <h1 class="text-center">Geographic Quiz Game!!</h1>
+            
+            </div>
+        
+        <!-- QUIZ INTRO -->
+        <div id="quizIntro" class=" home-box container mt-5 pb-5">
+            <div class="row pt-2">
+                <div class="col">
+                    <h3 class="text-center">Take the quiz to test your knowledge!</h3>
+                    <div class="my-3">
+                        <p class="text-center">
+                            You just have to guess the answer and choose the correct one from the given options.  The quizzes comprises of basic questions like guess the capital of a specific country and many more. You may opt geographic quiz for kids below to test and enhance your child’s learning skills. The aim is to expand your knowledge.    
+                        </p>
+                        <p class= "text-center">
+                          For every correct answer you'll get one point. Try to collect all points. Let's go!
+                      </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row py-2">
+                <div class="col text-center">
+                    <button  type="button" id= "play" class="btn btn-primary btn-lg px-5">Play Game</button>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+    
+    <!-- QUIZ QUESTION -->
+   
+    <section id="myQuizSection" class="container">
+      <div class = "quiz-box custom-box d-none">
+        <div class="row">
+          <div class="col text-center my-5">
+              <img src="images/welcome-image.jpg" class="img-fluid" alt="Responsive image"> 
+              
+            </div>
+        </div>
+          <div class="row">
+            <div class="col text-center my-5">
+              <div class="progress">
+                <div id="myBar" class="progress-bar w-0 " role="progressbar" aria-valuenow="75"  aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+          </div>
+        
+      
+        
+            <div class="question-number">
+              
+            </div>
+            <div class="question-text">
+               
+            </div>
+            <div class="option-container">
+              
+            </div>
+        
+        <br>
+        <div class="col text-center">
+          <button id="myStartQuizButton"  type="button" class="btn btn-primary btn-lg px-5 ">Next</button>
+        </div>
+        
+      </div>
+      </div>
+       
+      <div class = "result-box d-none">
+      <table class="table table-bordered my-5">
+        <h3 class="text-center my-5">Result</h3>
+        <thead>
+          <tr>
+            <th scope="col">Total Question</th>
+            <th scope="col"class="total-question"></th>
+            
+            
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Correct</th>
+            <td class="total-correct"></td>
+            
+            
+          </tr>
+          <tr>
+            <th scope="row">Wrong</th>
+            <td class="total-wrong"></td>
+            
+            
+          </tr>
+          <th scope="row">Percentage</th>
+            <td class="percentage"></td>
+            
+          <tr>
+            <th scope="row">Your Total Score</th>
+            <td class="total-score"></td>
+            
+            
+            
+          </tr>
+        </tbody>
+       
+      </table> 
+    
+      <div class="col text-center ">
+        <button type="button" id="try" class="btn btn-primary btn-lg ">Try Again</button>
+  <button type="button" id="go" class="btn btn-secondary btn-lg ">Go to Home</button>
+        </div> 
+      </div>
+        
+    </section>
+
+    
+   
+
+    
+   
+    <!--FOOTER-->
+    <section class="bg-dark text-white mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <p class="small my-3">© 2020 Mahmut Sarcan | All rights reserved |
+            </div>
+        </div>
+    </section>
+   
+
+    <!-- BOOTSTRAP -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src = "script.js"></script>
+    <script src = "game.js"></script>
+</body>
+</html>
